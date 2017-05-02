@@ -1,7 +1,8 @@
 version: '2'
 services: 
    apiserver:
-     image: artoz/apiserver:0.1
+     image: artoz/apiserver:0.2
+     network_mode: "host"
      ports:
       - "50051:50051"
      volumes:
